@@ -11,6 +11,7 @@ class DataMixin:
     title_page = None
     cat_selected = None
     extra_context = {}
+    paginate_by = 5                 # количество записей на странице
 
     def __init__(self):
         if self.title_page:
