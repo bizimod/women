@@ -26,6 +26,7 @@ from debug_toolbar.toolbar import debug_toolbar_urls
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('women.urls')),
+    path('users/',include('users.urls',namespace='users')),      #namespace - пространство имен ОТДЕЛЕНИЕ от аналогичных имен (login,logout)
     path('__debug__/', include('debug_toolbar.urls')),
 ]
 
